@@ -1,0 +1,60 @@
+<div class="header bg-gradient-danger pb-5 pt-5 pt-md-8"></div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-3 order-xl-1" style="padding-top: 10%;">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 order-lg-2">
+          <div class="card-profile-image">
+            <img [src]="url" class="rounded-circle" height="200">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-9 order-xl-2">
+      <div class="card bg-secondary shadow">
+        <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+          <div class="card-header bg-white border-0">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <h3 class="mb-0">Produto</h3>
+              </div>
+              <div class="col-4 text-right">
+                <button type="submit" class="btn btn-sm btn-primary" [disabled]="!productForm.valid">Salvar</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-name">Nome</label>
+                    <input type="text" id="input-name" formControlName="name"
+                      class="form-control form-control-alternative" placeholder="Nome">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-price">Preço</label>
+                    <input type="text" id="input-price" prefix="R$" mask="separator.2" formControlName="value"
+                      thousandSeparator="." class="form-control form-control-alternative" placeholder="R$00.00">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group upload-btn-wrapper">
+                    <button class="btnr">Selecionar Arquivo</button>
+                    <span [innerText]="lblArquivo"></span>
+                    <input type='file' class="btn btn-primary"
+                      class="form-control form-control-alternative" (change)="onSelectFile($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

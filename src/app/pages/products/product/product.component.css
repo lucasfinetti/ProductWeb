@@ -1,0 +1,83 @@
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    padding: 8px 12px;
+    height: 50px!important;
+    width:calc(100% - 26px);
+  }
+  
+  .upload-btn-wrapper .btnr {
+    border: 1px solid gray;
+    color: gray;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+  }
+  .upload-btn-wrapper .btnr + span {
+    padding: 5px;
+    font-weight: normal;
+    }
+  
+  .upload-btn-wrapper input[type=file] {
+      font-size: 42px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+  }
+  
+  .service-block {
+    padding: 10px 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFF;
+    cursor: pointer;
+  }
+  
+  .service-block-green {
+    background: #2ecc71;
+  }
+  
+  .service-block-red {
+    background: #e74c3c;
+  }
+  
+  .service-block-blue {
+    background: blue;
+  }
+  
+  .service-block-yellow {
+    background: #f1c40f;
+  }
+  
+  .service-block-light {
+    background: #ecf0f1;
+    color: #000;
+  }
+  
+  .service-block-brown {
+    background: #9c8061;   
+  }
+  
+  .service-block-aqua {
+    background: #27d7e7;   
+  }
+  
+  .service-block-sea {
+    background: #1abc9c;   
+  }
+  
+  .service-block-default {
+    background: #684581;   
+  }
+  
+  .overflow {
+    overflow-x: hidden;
+  }
